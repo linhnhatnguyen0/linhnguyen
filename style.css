@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #fde74c;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
+}
+main h1 {
+  margin: 30px 0;
+  color: #4c5b5c;
+  font-size: 50px;
+}
+main form {
+  padding: 0;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main form input {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  color: #2f323a;
+  width: 70%;
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.596);
+}
+main form ::placeholder {
+  color: #adadad;
+  font-size: 18px;
+}
+main form button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin-top: 30px;
+  cursor: pointer;
+}
+main .todo-main {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+main .todo-main .todo-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  overflow-y: scroll;
+  height: 60vh;
+}
+main .todo-main .todo-list::-webkit-scrollbar {
+  width: 10px;
+  background-color: #77567a;
+  border-radius: 1rem;
+}
+main .todo-main .todo-list::-webkit-scrollbar-thumb {
+  background-color: #98f8bd;
+  border-radius: 1rem;
+}
+main .todo-main .todo-item {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 5px 5px 0px 0 rgba(3, 0, 0, 0.548);
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+  padding: 10px 20px;
+}
+main .todo-main .todo-item .todo-button {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .todo-main .todo-item .todo-button button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 40%;
+  height: 30px;
+  position: relative;
+}
+main .todo-main .todo-item .todo-button button ion-icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #db5461;
+  pointer-events: none;
+}
+main .todo-main .completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=style.css.map */
